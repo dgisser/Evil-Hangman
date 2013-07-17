@@ -1,0 +1,35 @@
+
+Evil Hangman:
+
+The front of it will have the title or graphic for evil hangman. It will have the appropriate number of dashes.  It will have a countdown for number of guesses.  Below it will have all 26 letters, and they disappear as you guess.  There will be a 'New game' button.
+
+The back has a slider for word length and a slider for guesses.
+
+Behind the scenes:
+
+Letter selection process:
+Computer cuts down plist to only words of the selected length.  Computer checks the # of words that don't have the letter, then checks words with successive amounts of the letter in specific locations (Group words such that every group contains the same number of the letter, and all the letters are in the same locations).  The largest group is chosen and the occurrences of the letter are placed as they should be on the answer line.
+
+If the user wins then congratulate them (optional failure message).  Tile input should not longer be accepted.
+
+If no tiles have been pressed, then sliders are active.  If any tiles have been pressed, the sliders will be replaced with a "New game?" button.
+
+Longest word is end of word slider
+
+Longest amount of guesses is 26.
+
+If game is backgrounded, it must resume correctly.
+
+If started from scratch, it will begin with a default number of guesses and letters.
+
+Maybe use SQLite for easy indexing.
+
+Spec things:
+
+Default length and guesses should be set in NSUserDefaults with registerDefaults:.  Whenever the user changes those settings new values should be stored in NSUserDefaults (so changes exist of app closed)
+
+Must be UISliders with UILabels for current value
+
+Deal with low-memory (reload views)
+
+ASK IF RJ'S KEYBOARD IS OK because they ask for keyboards and text fields and reporting used letters to the screen
