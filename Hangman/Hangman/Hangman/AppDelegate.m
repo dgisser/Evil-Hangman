@@ -2,26 +2,20 @@
 //  AppDelegate.m
 //  Hangman
 //
-//  Created by David Gisser on 7/10/13.
+//  Created by David Gisser on 7/17/13.
 //  Copyright (c) 2013 David Gisser. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#import "MainViewController.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    self.window.rootViewController = self.mainViewController;
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

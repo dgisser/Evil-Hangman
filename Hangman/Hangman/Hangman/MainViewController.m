@@ -2,7 +2,7 @@
 //  MainViewController.m
 //  Hangman
 //
-//  Created by David Gisser on 7/10/13.
+//  Created by David Gisser on 7/17/13.
 //  Copyright (c) 2013 David Gisser. All rights reserved.
 //
 
@@ -33,12 +33,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)showInfo:(id)sender
-{    
-    FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideViewController" bundle:nil];
-    controller.delegate = self;
-    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:controller animated:YES completion:nil];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        [[segue destinationViewController] setDelegate:self];
+    }
 }
 
 @end
