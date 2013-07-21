@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.guessLabel.text = @"13";
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +32,16 @@
 - (IBAction)done:(id)sender
 {
     [self.delegate flipsideViewControllerDidFinish:self];
+}
+
+- (IBAction)guessSlider:(UISlider *)sender {
+    int guesses = lroundf(sender.value);
+    self.guessLabel.text = [NSString stringWithFormat:@"%d", guesses];
+}
+
+- (IBAction)lengthSlider:(UISlider *)sender {
+    int lengthChosen = lroundf(sender.value);
+    self.lengthLabel.text = [NSString stringWithFormat:@"%d", lengthChosen];
 }
 
 @end

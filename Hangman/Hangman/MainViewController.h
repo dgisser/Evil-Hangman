@@ -9,5 +9,9 @@
 #import "FlipsideViewController.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+- (IBAction)letterPressed:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *number;
+@property (assign, nonatomic) unsigned long guessesLeft;
 
 @end

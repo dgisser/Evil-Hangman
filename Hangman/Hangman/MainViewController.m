@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"plist"];
+    NSArray *words = [[NSArray alloc] initWithContentsOfFile:path];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,4 +42,7 @@
     }
 }
 
+- (IBAction)letterPressed:(UIButton *)sender {
+    NSString *letter = [sender titleForState:UIControlStateNormal];
+}
 @end

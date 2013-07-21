@@ -17,7 +17,11 @@
 @interface FlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UILabel *guessLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lengthLabel;
 
 - (IBAction)done:(id)sender;
+- (IBAction)guessSlider:(UISlider *)sender;
+- (IBAction)lengthSlider:(UISlider *)sender;
 
 @end

@@ -459,6 +459,7 @@
 				2B658E5B1796734E0095EB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B658E5C1796734E0095EB8C /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				2B658E5E1796734E0095EB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
