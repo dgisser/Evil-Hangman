@@ -12,6 +12,7 @@
 
 @protocol FlipsideViewControllerDelegate
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+- (void)setGuesses:(NSInteger*)guesses;
 @end
 
 @interface FlipsideViewController : UIViewController

@@ -31,5 +31,3 @@ Default length and guesses should be set in NSUserDefaults with registerDefaults
 Must be UISliders with UILabels for current value
 
 Deal with low-memory (reload views)
-
-ASK IF RJ'S KEYBOARD IS OK because they ask for keyboards and text fields and reporting used letters to the screen

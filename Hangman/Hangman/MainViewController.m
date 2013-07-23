@@ -20,6 +20,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"plist"];
     NSArray *words = [[NSArray alloc] initWithContentsOfFile:path];
+    self.words = words;
+    self.guessesLeft = 13;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,5 +46,14 @@
 
 - (IBAction)letterPressed:(UIButton *)sender {
     NSString *letter = [sender titleForState:UIControlStateNormal];
+    sender.hidden=TRUE;
+    self.guessesLeft--;
+    self.guessLabel.text = [NSString stringWithFormat:@"%ul", self.guessesLeft];
+}
+- (void)setGuesses:(NSInteger*)guesses
+{
+    NSLog(@"%d",*(guesses));
+    self.guessesLeft = *(guesses);
+    self.guessLabel.text = [NSString stringWithFormat:@"%d", *(guesses)];
 }
 @end

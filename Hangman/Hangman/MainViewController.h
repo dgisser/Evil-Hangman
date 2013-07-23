@@ -10,8 +10,10 @@
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
 - (IBAction)letterPressed:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *guessLabel;
+@property (assign, nonatomic) int guessesLeft;
+@property (nonatomic, readwrite, strong) NSArray *words;
 
-@property (weak, nonatomic) IBOutlet UIButton *number;
-@property (assign, nonatomic) unsigned long guessesLeft;
+
 
 @end

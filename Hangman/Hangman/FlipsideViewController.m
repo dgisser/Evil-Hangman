@@ -35,8 +35,9 @@
 }
 
 - (IBAction)guessSlider:(UISlider *)sender {
-    int guesses = lroundf(sender.value);
+    int guesses = (int)roundf(sender.value);
     self.guessLabel.text = [NSString stringWithFormat:@"%d", guesses];
+    [self.delegate setGuesses:&guesses];
 }
 
 - (IBAction)lengthSlider:(UISlider *)sender {

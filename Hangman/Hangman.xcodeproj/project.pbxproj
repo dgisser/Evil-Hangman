@@ -24,6 +24,7 @@
 		2B658E4B1796734E0095EB8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B658E231796734E0095EB8C /* Foundation.framework */; };
 		2B658E531796734E0095EB8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B658E511796734E0095EB8C /* InfoPlist.strings */; };
 		2B658E561796734E0095EB8C /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B658E551796734E0095EB8C /* HangmanTests.m */; };
+		2B87DFB6179D070500DCED1F /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B87DFB5179D070500DCED1F /* words.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2B658E521796734E0095EB8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B658E541796734E0095EB8C /* HangmanTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HangmanTests.h; sourceTree = "<group>"; };
 		2B658E551796734E0095EB8C /* HangmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangmanTests.m; sourceTree = "<group>"; };
+		2B87DFB5179D070500DCED1F /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		2B658E281796734E0095EB8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B87DFB5179D070500DCED1F /* words.plist */,
 				2B658E291796734E0095EB8C /* Hangman-Info.plist */,
 				2B658E2A1796734E0095EB8C /* InfoPlist.strings */,
 				2B658E2D1796734E0095EB8C /* main.m */,
@@ -241,6 +244,7 @@
 				2B658E361796734E0095EB8C /* Default@2x.png in Resources */,
 				2B658E381796734E0095EB8C /* Default-568h@2x.png in Resources */,
 				2B658E3B1796734E0095EB8C /* MainStoryboard.storyboard in Resources */,
+				2B87DFB6179D070500DCED1F /* words.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
